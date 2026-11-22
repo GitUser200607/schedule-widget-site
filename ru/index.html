@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScheduleWidget — виджет календаря и задач для Android</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../logo-512.png">
+</head>
+<body>
+<main>
+  <div class="top">
+    <img class="logo" src="../logo-512.png" alt="ScheduleWidget" width="56" height="56">
+    <h1>ScheduleWidget</h1>
+    <a class="lang" href="../index.html" hreflang="en">English</a>
+  </div>
+  <p class="sub">Виджет календаря и задач для Android</p>
+
+  <h2>Что это за приложение</h2>
+  <p>ScheduleWidget — домашний виджет для Android. Он показывает одним
+  прокручиваемым списком события календаря текущего устройства и задачи из
+  аккаунта Google Tasks, чтобы день можно было прочитать, не открывая другие
+  приложения.</p>
+
+  <h2>Что показывает</h2>
+  <ul>
+    <li>сегодня, завтра и ближайшие дни — события с временем и цветом календаря;</li>
+    <li>задачи Google Tasks со сроками, включая просроченные, и раскрываемый
+        список самых старых просроченных;</li>
+    <li>дни рождения из контактов устройства;</li>
+    <li>ближайший будильник, если он заведён.</li>
+  </ul>
+
+  <h2>Для кого</h2>
+  <p>Личное приложение для одного пользователя — автора. Устанавливается вручную
+  (sideload), в магазинах приложений не распространяется.</p>
+
+  <h2>Как использует данные Google</h2>
+  <p>Приложение запрашивает два разрешения Google только на чтение:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/tasks.readonly</code> — чтобы
+        получить список незавершённых задач Google Tasks со сроками;</li>
+    <li><code>https://www.googleapis.com/auth/calendar.calendarlist.readonly</code> —
+        чтобы прочитать цвета календарей пользователя.</li>
+  </ul>
+  <p>Доступ выдаётся через панель авторизации Google. Приложение получает
+  короткоживущий токен от Google Play services и обращается только к
+  <code>tasks.googleapis.com</code> и <code>www.googleapis.com</code>. Ни токен,
+  ни данные Google не уходят на серверы автора; результаты кэшируются локально на
+  устройстве, чтобы виджет работал без сети. Доступ можно отозвать на странице
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Приватность</h2>
+  <div class="card">
+    <p>Ни учётных записей, ни рекламы, ни аналитики, ни сторонних SDK. Календарь,
+    контакты и задачи читаются на устройстве и остаются на устройстве.</p>
+    <p>Подробнее: <a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+
+  <h2>Контакт</h2>
+  <p><a href="mailto:schedule-widget@trmw.ru">schedule-widget@trmw.ru</a></p>
+
+  <footer>
+    Обновлено: 21 ноября 2026 г.
+  </footer>
+</main>
+</body>
+</html>

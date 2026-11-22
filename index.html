@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScheduleWidget — calendar and tasks widget for Android</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo-512.png">
+</head>
+<body>
+<main>
+  <div class="top">
+    <img class="logo" src="logo-512.png" alt="ScheduleWidget" width="56" height="56">
+    <h1>ScheduleWidget</h1>
+    <a class="lang" href="ru/" hreflang="ru">Русский</a>
+  </div>
+  <p class="sub">Calendar and tasks widget for Android</p>
+
+  <h2>What this app is</h2>
+  <p>ScheduleWidget is a home screen widget for Android. It shows, in one
+  scrolling list, the calendar events of the current device and the tasks from
+  the user's Google Tasks account, so the day can be read without opening any
+  other app.</p>
+
+  <h2>What it shows</h2>
+  <ul>
+    <li>today, tomorrow and the following days — events with their time and calendar colour;</li>
+    <li>Google Tasks with their due dates, including overdue ones, and an expandable
+        list of the oldest overdue tasks;</li>
+    <li>birthdays taken from the device contacts;</li>
+    <li>the next alarm set on the device, when there is one.</li>
+  </ul>
+
+  <h2>Who it is for</h2>
+  <p>A personal app for one user — its author. It is installed manually
+  (sideloaded) and is not distributed through app stores.</p>
+
+  <h2>How it uses Google data</h2>
+  <p>The app requests two read-only Google scopes:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/tasks.readonly</code> — to list the
+        user's unfinished Google Tasks with their due dates;</li>
+    <li><code>https://www.googleapis.com/auth/calendar.calendarlist.readonly</code> —
+        to read the colours of the user's calendars.</li>
+  </ul>
+  <p>Access is granted through the Google authorization panel. The app receives a
+  short-lived access token from Google Play services and calls only
+  <code>tasks.googleapis.com</code> and <code>www.googleapis.com</code>. No token
+  or Google data is sent to any server of the author; the results are cached
+  locally on the device so the widget keeps working offline. Access can be
+  revoked at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Privacy</h2>
+  <div class="card">
+    <p>No accounts, no ads, no analytics, no third-party SDKs. Calendar, contacts
+    and tasks are read on the device and stay on the device.</p>
+    <p>Full details: <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:schedule-widget@trmw.ru">schedule-widget@trmw.ru</a></p>
+
+  <footer>
+    Updated: 21 November 2026
+  </footer>
+</main>
+</body>
+</html>
