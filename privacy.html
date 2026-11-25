@@ -14,12 +14,13 @@
     <a class="lang" href="ru/privacy.html" hreflang="ru">Русский</a>
   </div>
   <p class="sub">ScheduleWidget for Android (package <code>com.local.schedulewidget</code>) ·
-  last updated 21 November 2026</p>
+  last updated 25 November 2026</p>
 
   <p>This policy explains what the ScheduleWidget app reads, why it reads it,
-  where the data goes and how access can be revoked. The app is a personal
-  project with a single user — its author. It has no user accounts, no
-  registration, no advertising and no analytics.</p>
+  where the data goes and how access can be revoked. It covers both the Android
+  app and the pages on this site. The app is a personal project with a single
+  user — its author. It has no user accounts, no registration, no advertising
+  and no analytics.</p>
 
   <h2>1. Data the app accesses</h2>
   <ul>
@@ -54,49 +55,81 @@
   widget can be drawn while offline. Nothing is uploaded to a server operated by
   the author: the author has no server that receives this data.</p>
 
-  <h2>4. Retention</h2>
+  <h2>4. Retention and deletion</h2>
   <p>The local cache is refreshed on every successful sync and keeps only the
   current list of unfinished tasks. It is deleted when the app is uninstalled or
   its storage is cleared in Android settings. No copy is retained anywhere else.</p>
+  <p>To have Google user data deleted, write to
+  <a href="mailto:schedule-widget@trmw.ru">schedule-widget@trmw.ru</a> with the
+  subject "Data deletion". The app keeps no copy of Google user data anywhere
+  except the device, so such a request means clearing that copy; it is confirmed
+  by email within 30 days. Revoking the app's access at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+  stops all further access at once, and no new Google data is read after that.</p>
 
   <h2>5. Sharing and third parties</h2>
   <p>Data is not sold, shared, transferred or disclosed to any third party. The
   app communicates only with Google APIs (<code>tasks.googleapis.com</code>,
   <code>www.googleapis.com</code>) using an access token issued by Google Play
   services; that traffic is subject to Google's own privacy policy. The app
-  contains no advertising, analytics, crash-reporting or other third-party SDKs.
-  Google API data is not used to develop, improve or train machine-learning
-  models, and the app does not generate or process imagery of any kind.</p>
+  contains no advertising, analytics, crash-reporting or other third-party SDKs.</p>
+  <p>Google user data is never used for advertising or ad retargeting, is never
+  sold or transferred to data brokers or information resellers, is never used to
+  determine credit-worthiness or for lending decisions, and is never used to
+  develop, improve or train machine-learning models. The app does not generate
+  or process imagery of any kind.</p>
 
-  <h2>6. Security</h2>
+  <h2>6. Google user data and Limited Use</h2>
+  <p>ScheduleWidget's use and transfer to any other app of information received
+  from Google APIs will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+  API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p>Concretely, the only Google user data the app receives is the Google Tasks
+  data and the Google calendar list described in section 1. It is requested with
+  read-only scopes (<code>tasks.readonly</code>,
+  <code>calendar.calendarlist.readonly</code>), so the app never creates,
+  modifies or deletes anything in the user's Google account. That data is used
+  only to draw the widget, is stored only on the device, is not sent to the
+  author or to any other party, and is not read by any person.</p>
+
+  <h2>7. Security</h2>
   <p>Network requests use HTTPS. The app never stores Google account passwords
   and never handles long-lived refresh tokens itself — Google Play services
   issues a short-lived access token on demand. Widget data is kept in the app's
-  private sandbox, protected by the Android application sandbox.</p>
+  private sandbox, protected by the Android application sandbox; while the device
+  is locked, Android's file-based encryption protects it at rest.</p>
 
-  <h2>7. Your choices and rights</h2>
+  <h2>8. This website</h2>
+  <p>This site is a static set of pages served by GitHub Pages. It sets no
+  cookies, runs no scripts, uses no analytics or tracking, and loads no fonts,
+  images or styles from third parties.</p>
+
+  <h2>9. Your choices and rights</h2>
   <ul>
     <li>Android permissions (calendar, contacts, notifications) can be revoked at
         any time in <em>Settings → Apps → ScheduleWidget → Permissions</em>; the
         widget keeps working and simply stops showing the affected rows.</li>
     <li>Access to Google Tasks and the calendar list can be revoked at
         <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Deletion of Google user data can be requested by email, as described in
+        section 4.</li>
     <li>All locally stored data is removed by uninstalling the app or clearing its
         storage in Android settings.</li>
   </ul>
 
-  <h2>8. Children</h2>
+  <h2>10. Children</h2>
   <p>The app is not directed to children and does not knowingly process data of
   children under 13.</p>
 
-  <h2>9. Changes to this policy</h2>
+  <h2>11. Changes to this policy</h2>
   <p>If the app starts to use additional data, this page will be updated and the
   "last updated" date above will change. The current version is always available
   at this address.</p>
 
-  <h2>10. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Questions about this policy or about the app's data handling:
-  <a href="mailto:schedule-widget@trmw.ru">schedule-widget@trmw.ru</a></p>
+  <a href="mailto:schedule-widget@trmw.ru">schedule-widget@trmw.ru</a>. The same
+  address is the contact of the data controller — the author of the app.</p>
 
   <footer>
     <a href="index.html">← ScheduleWidget</a>
